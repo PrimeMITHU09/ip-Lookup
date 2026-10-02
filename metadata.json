@@ -1,0 +1,6 @@
+{
+  "name": "GeoIdentity - IP Geolocation & Identity Generator",
+  "description": "Lookup any IP address to detect its country, city, and ISP, and generate realistic localized identity details including first name, last name, street address, city, state, and email.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
