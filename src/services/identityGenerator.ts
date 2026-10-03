@@ -505,6 +505,24 @@ export function generateIdentity(
   const lastName = locale.lastNames[Math.floor(Math.random() * locale.lastNames.length)];
   const fullName = `${firstName} ${lastName}`;
 
+  // Authentic International Pet Names (world-famous, globally popular pet names)
+  const internationalPetNames = [
+    'Max', 'Bella', 'Charlie', 'Luna', 'Lucy', 'Cooper', 'Bailey', 'Daisy',
+    'Sadie', 'Molly', 'Buddy', 'Lola', 'Stella', 'Tucker', 'Milo', 'Bear',
+    'Rocky', 'Leo', 'Duke', 'Teddy', 'Oliver', 'Chloe', 'Penny', 'Zoey',
+    'Lily', 'Jack', 'Zeus', 'Ruby', 'Rosie', 'Riley', 'Harley', 'Sophie',
+    'Toby', 'Roxy', 'Buster', 'Cody', 'Winston', 'Murphy', 'Bandit', 'Ziggy',
+    'Dexter', 'Bruno', 'Apollo', 'Simba', 'Otis', 'Thor', 'Jax', 'Archie',
+    'Gizmo', 'Lucky', 'Rusty', 'Shadow', 'Scout', 'Rex', 'Hunter', 'Jasper',
+    'Finn', 'Sammy', 'Ollie', 'Ace', 'Gus', 'Beau', 'Brody', 'Hank',
+    'Boomer', 'Diesel', 'Champ', 'Pepper', 'Cookie', 'Peanut', 'Oreo',
+    'Hazel', 'Ginger', 'Abby', 'Sasha', 'Sandy', 'Cleo', 'Phoebe', 'Lady',
+    'Honey', 'Dixie', 'Maya', 'Olive', 'Bonnie', 'Emma', 'Princess', 'Athena',
+    'Harper', 'Nova', 'Kona', 'Dakota', 'Callie', 'Finnie', 'Muffin', 'Smokey',
+    'Chester', 'Pumpkin', 'Mocha', 'Brownie', 'Bubbles', 'Snowy', 'Coco'
+  ];
+  const petName = internationalPetNames[Math.floor(Math.random() * internationalPetNames.length)];
+
   // Age between 21 and 55
   const age = Math.floor(22 + Math.random() * 34);
   const currentYear = new Date().getFullYear();
@@ -553,6 +571,7 @@ export function generateIdentity(
     id: `id_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
     firstName,
     lastName,
+    petName,
     fullName,
     gender,
     email,

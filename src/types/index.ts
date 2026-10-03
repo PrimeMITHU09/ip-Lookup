@@ -26,6 +26,7 @@ export interface PersonIdentity {
   id: string;
   firstName: string;
   lastName: string;
+  petName: string;
   fullName: string;
   gender: 'male' | 'female';
   email: string;

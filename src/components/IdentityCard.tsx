@@ -12,7 +12,8 @@ import {
   FileText,
   AlignLeft,
   List,
-  ExternalLink
+  ExternalLink,
+  Smile
 } from 'lucide-react';
 import { PersonIdentity, GeoLocationData } from '../types';
 import { exportToJson, exportToVcf, formatFullText } from '../utils/formatters';
@@ -72,6 +73,13 @@ export const IdentityCard: React.FC<IdentityCardProps> = ({
       label: 'Last Name',
       value: identity.lastName,
       icon: User,
+      primary: true,
+    },
+    {
+      id: 'petName',
+      label: 'Pet Name',
+      value: identity.petName,
+      icon: Smile,
       primary: true,
     },
     {

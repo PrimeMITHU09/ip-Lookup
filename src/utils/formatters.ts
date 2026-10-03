@@ -156,6 +156,7 @@ export function formatFullText(identity: PersonIdentity, geo: GeoLocationData): 
   return [
     `First Name: ${identity.firstName}`,
     `Last Name: ${identity.lastName}`,
+    `Pet Name: ${identity.petName}`,
     `Street: ${identity.streetAddress}`,
     `City: ${identity.city}`,
     `State: ${identity.state}`,
